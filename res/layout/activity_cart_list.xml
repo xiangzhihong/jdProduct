@@ -1,0 +1,125 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+     >
+
+
+   <LinearLayout
+       android:id="@+id/cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f8f8"
+        android:paddingBottom="8dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="8dip" >
+
+        <CheckBox
+            android:id="@+id/cb_cart_all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cart_all_select_selector"
+            android:checked="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cart_all_sum"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="@string/goods_item_price"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_cart_all_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="3112.00"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cart_product_sum"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="@string/goods_item_price"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cart_product_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="3222.00"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_cart_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_buy_selector" />
+    </LinearLayout>
+    
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/cart_bottom"
+        >
+
+        <ListView
+            android:id="@+id/lv_cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@null"
+            />
+        
+    </FrameLayout>
+</RelativeLayout>

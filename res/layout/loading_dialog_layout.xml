@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110.7dp"
+    android:layout_height="110.7dp"
+    android:background="@drawable/loading_dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/anim_img"
+            android:layout_width="42.7dp"
+            android:layout_height="42.7dp"
+            android:background="@anim/loading_dialog_anim"
+            android:contentDescription="请稍候..."
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/content_tv"
+            style="@style/style_18_ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:text="请稍候..." />
+    </LinearLayout>
+
+</RelativeLayout>

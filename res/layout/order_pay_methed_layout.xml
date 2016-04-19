@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:orientation="vertical"
+     >
+     
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+     >
+
+    <TextView 
+         style="@style/style_16_999999"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/pay_method_right_layout"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:text="支付及配送"
+        />
+    
+    <LinearLayout 
+         android:id="@+id/pay_method_right_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/pay_right_image"
+         android:orientation="vertical"
+        >
+        
+         <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right"
+         android:text="在线支付"
+        />
+         <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:layout_gravity="right"
+         android:text="京东快递"
+        />
+        <TextView 
+         style="@style/style_14_f15353"   
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="2015-5-29(周五) 9:00-18:00"
+        />
+         
+    </LinearLayout>
+    
+    <ImageView 
+         android:id="@+id/pay_right_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/arrow_right"
+         android:layout_marginLeft="5dp"
+         android:layout_centerVertical="true"
+        />
+  </RelativeLayout>  
+    
+<View style="@style/horizontal_line" />
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:layout_marginTop="8dp"
+     >
+     <TextView 
+         style="@style/style_16_999999"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:text="发票信息"
+        />
+     <TextView 
+         android:id="@+id/invoice_info"
+         style="@style/style_14_000000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_toLeftOf="@+id/pay_right_image2"
+         android:text="费图书商品-不开发票"
+        />
+     
+    <ImageView 
+         android:id="@+id/pay_right_image2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/arrow_right"
+         android:layout_marginLeft="5dp"
+         android:layout_centerVertical="true"
+        />
+    
+    </RelativeLayout>
+
+</LinearLayout>

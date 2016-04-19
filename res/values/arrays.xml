@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 分类 -->
+    <string-array name="cate_list">
+        <item>推荐</item>
+        <item>上衣</item>
+        <item>裤子</item>
+        <item>内衣</item>
+        <item>鞋子</item>
+        <item>手机</item>
+        <item>家电用品</item>
+        <item>数码</item>
+        <item>化妆</item>
+        <item>图书</item>
+        <item>家具</item>
+        <item>汽车</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

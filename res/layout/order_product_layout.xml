@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <ImageView 
+                android:id="@+id/order_image"
+                 android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/index_gallery_01"
+                />
+            <LinearLayout 
+                android:id="@+id/order_product_layout"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/order_image"
+                android:layout_toLeftOf="@+id/order_produt_money"
+                android:layout_centerVertical="true"
+                >
+            
+            <TextView
+                style="@style/style_14_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="七匹狼男士内裤，皮带，四角裤，腰带男人的选择" />
+            
+            <TextView
+                android:id="@+id/order_buy_num"
+                style="@style/style_14_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLength="2"
+                android:ellipsize="end"
+                android:text="x2" />
+            
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/order_produt_money"
+                 style="@style/style_16_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#f15353"
+                android:text="¥100"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawablePadding="5dp"
+                 />
+            
+        </RelativeLayout>
+
+       
+    </LinearLayout>
+
+</LinearLayout>

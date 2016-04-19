@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itau.jingdong.widgets.NumEditText
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_product_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_product_num_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit_product_num_des_selector" />
+
+    <EditText
+        android:id="@+id/et_product_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:background="@drawable/product_num_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="1" />
+
+    <ImageView
+        android:id="@+id/iv_product_num_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit_product_num_add_selector" />
+</com.itau.jingdong.widgets.NumEditText>

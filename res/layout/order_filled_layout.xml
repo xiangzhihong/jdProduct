@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/visa_filled_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/order_bootom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/summit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ff333333" >
+
+                <TextView
+                    android:id="@+id/next_summit"
+                    style="@style/style_16_f1f1f1"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/order_tip_selector"
+                    android:gravity="center"
+                    android:text="提交订单" />
+
+                <TextView
+                    android:id="@+id/tv_amount_title"
+                    style="@style/style_18_ebebeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="总价：100.00" />
+
+                <TextView
+                    android:id="@+id/visa_totle_price_tv"
+                    style="@style/style_24_ebebeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_amount_title" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/order_bootom"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:orientation="vertical" >
+                <!-- 地址 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6.5dp"
+                    android:background="@drawable/dot_line" />
+                <include layout="@layout/order_address_layout" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/dot_line" />
+                 <!-- 订单详情 -->
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginTop="10.5dp" />
+                <include layout="@layout/order_product_layout" />
+                <View style="@style/horizontal_line" />
+                <!-- 支付方式 -->
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginTop="10.5dp" />
+                <include 
+                    android:id="@+id/choose_pay_method"
+                    layout="@layout/order_pay_methed_layout" />
+                <View style="@style/horizontal_line" />
+                <!-- 优惠券 -->
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginTop="10.5dp" />
+                <include layout="@layout/order_coupon_layout" />
+                <View style="@style/horizontal_line" />
+                
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

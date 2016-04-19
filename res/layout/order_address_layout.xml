@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFAF3"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/order_name"
+                style="@style/style_18_000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/address_name_icon"
+                android:drawablePadding="5dp"
+                android:text="京东小二" />
+
+            <TextView
+                android:id="@+id/order_mobile"
+                 style="@style/style_18_000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13764659765"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="25dp"
+                android:drawableLeft="@drawable/address_mobile_icon" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3.8dp"
+            android:layout_marginTop="3.8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_address_bg"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="默认" />
+
+            <TextView
+                android:id="@+id/order_address"
+                style="@style/style_16_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="上海市黄浦区延安东路888号"
+                 />
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/cart"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+    <!-- 如果没有登录，打开登录提示 -->
+
+    <LinearLayout
+        android:id="@+id/cart_no_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/category_selection_gridview_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cart_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/android_title_button_pressed"
+                android:text="登录" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:text="@string/cart_logininfo"
+                android:textColor="@color/goldyellow"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/category_selection_gridview_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/cart_no_data_icon"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="@string/cartinfo_no"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cart_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/cart_btn_normal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/cart_market"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 登录后 -->
+    <include 
+        android:id="@+id/cart_list_layout"
+        layout="@layout/activity_cart_list"
+        android:visibility="gone"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="180.0" android:endColor="#ffcccccc" android:startColor="@color/white" />
+
+            <stroke android:width="1.0px" android:color="#ffa7a7a7" />
+
+            <solid android:color="#989798" />
+
+            <corners android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" />
+        </shape>
+        
+    </item>
+        
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="180.0" android:endColor="#ffcccccc" android:startColor="@color/white" />
+
+            <stroke android:width="1.0px" android:color="#ffa7a7a7" />
+
+            <solid android:color="#989798" />
+
+            <corners android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" />
+        </shape>
+        
+    </item>
+        
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="180.0" android:endColor="#ffcccccc" android:startColor="@color/white" />
+
+            <stroke android:width="1.0px" android:color="#ffa7a7a7" />
+
+            <solid android:color="#989798" />
+
+            <corners android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" />
+        </shape>
+        
+    </item>
+        
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="180.0" android:endColor="#ffcccccc" android:startColor="@color/white" />
+
+            <stroke android:width="1.0px" android:color="#ffa7a7a7" />
+
+            <solid android:color="@color/white" />
+
+            <corners android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" />
+        </shape>
+        
+    </item>
+
+</selector>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/payLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/payIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/app_pay_icon"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/payCheck"
+            android:layout_toRightOf="@id/payIcon" >
+
+            <LinearLayout
+                android:id="@+id/payTitle_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/payTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="支付宝客户端支付"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/payRecomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/payTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/payTitle"
+                    android:background="#4dabfb"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="0.5dp"
+                    android:text="推荐"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/payTitle_showtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payTitle_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/payCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/pay_choose_ischeck"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/dot_line" 
+        android:visibility="gone"/>
+
+</LinearLayout>

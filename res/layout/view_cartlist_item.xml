@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dip"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- 提示 start -->
+
+    <LinearLayout
+        android:id="@+id/ll_cart_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_order_commodity_yanbao" />
+
+        <TextView
+            android:id="@+id/tv_cart_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <!-- 提示 stop -->
+
+
+    <!-- 鞋码、单价start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:singleLine="true"
+            android:text="@string/goods_bagweight"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:id="@+id/tv_cart_bagweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:singleLine="true"
+            android:textColor="@color/green" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:singleLine="true"
+            android:text="@string/cart_price"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:singleLine="true"
+            android:text="228.00"
+            android:textColor="@color/red" />
+    </LinearLayout>
+    <!-- 包重、单价stop -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+        
+        <CheckBox
+            android:id="@+id/cb_cart_item_check"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:background="@drawable/cart_select_selector"
+            android:checked="true" />
+
+        <ImageView
+            android:id="@+id/iv_cart_pic"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/cb_cart_item_check"
+            android:background="@drawable/goods_list_item_bg"
+            android:padding="4dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_cart_pic"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_cart_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cart_item_number"
+                    android:textColor="@color/grey"/>
+
+                <TextView
+                    android:id="@+id/tv_cart_fnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                
+                <include layout="@layout/view_num_edittext"/>
+                
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cart_item_sum"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/tv_cart_item_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19.00"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

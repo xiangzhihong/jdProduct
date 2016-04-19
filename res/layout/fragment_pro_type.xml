@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <!-- <com.jcwl.jdshop.ui.PullUpDownListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/activity_bg"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" /> -->
+    <TextView 
+        android:id="@+id/toptype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="12sp"
+        android:layout_margin="15dp"
+        />
+    
+     <GridView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_below="@id/toptype"
+        android:background="@null"
+        android:listSelector="@null"
+        android:scrollbars="none"
+         />
+
+    <ImageView
+        android:id="@+id/hint_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+</RelativeLayout>
